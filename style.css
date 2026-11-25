@@ -13,10 +13,11 @@ body {
     min-height: 100vh;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 35px 15px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid #ffffff30;
 }
 
@@ -29,6 +30,7 @@ header p {
     color: #c8c5e8;
 }
 
+/* Navigation */
 nav {
     text-align: center;
     padding: 20px;
@@ -51,12 +53,13 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+/* Home page */
 .hero {
     text-align: center;
     max-width: 800px;
     margin: 55px auto;
     padding: 55px 30px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid #ffffff30;
     border-radius: 20px;
     box-shadow: 0 10px 40px #00000040;
@@ -99,44 +102,165 @@ nav a:hover {
     border: 1px solid #64e6ff;
 }
 
-.container {
+/* Resume and bio-data page layout */
+.page {
     width: 85%;
     max-width: 950px;
     margin: 35px auto;
     padding: 30px;
-    background: rgba(255,255,255,0.07);
+    background: rgba(255, 255, 255, 0.07);
     border: 1px solid #ffffff30;
     border-radius: 18px;
     box-shadow: 0 10px 35px #00000040;
 }
 
-.section-title {
+.page-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0 25px;
+}
+
+.page-nav a {
+    color: #64e6ff;
+    background: #292747;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #64e6ff;
+    border-radius: 20px;
+}
+
+.page-nav a:hover {
+    background: #00bcd4;
+    color: #101020;
+}
+
+/* Resume photo and details */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #64e6ff;
+    border-radius: 8px;
+}
+
+/* Bio-data heading and photo */
+.bio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid #ffffff30;
+    border-radius: 15px;
+}
+
+.bio-header h1 {
+    color: #64e6ff;
+    margin: 8px 0;
+}
+
+.bio-header p {
+    color: #c8c5e8;
+}
+
+.small-title {
+    color: #64e6ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.bio-photo {
+    width: 130px;
+    height: 155px;
+    object-fit: cover;
+    border: 2px solid #64e6ff;
+    border-radius: 12px;
+}
+
+/* Resume and bio-data sections */
+section {
+    margin-bottom: 22px;
+}
+
+.bio-section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #ffffff30;
+    border-radius: 12px;
+}
+
+.section-title,
+.bio-section h2 {
     color: #64e6ff;
     border-left: 4px solid #b38aff;
     padding-left: 12px;
     margin-top: 30px;
-    cursor: pointer;
 }
 
-.profile-card {
-    background: linear-gradient(120deg, #292747, #193b50);
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    border: 1px solid #ffffff25;
+.bio-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff30;
 }
 
-.profile-card h3 {
-    color: #c69cff;
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
 }
 
+.bio-grid p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.bio-grid strong {
+    display: block;
+    color: #9befff;
+    margin-bottom: 4px;
+}
+
+.bio-grid span {
+    color: #f0f4ff;
+    overflow-wrap: anywhere;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.declaration p {
+    line-height: 1.7;
+}
+
+.declaration-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #77718f;
     padding: 13px;
     text-align: center;
@@ -151,6 +275,7 @@ td {
     background: #20243c;
 }
 
+/* Skills */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +291,23 @@ td {
     border-radius: 20px;
 }
 
+/* Print button */
+.print-btn {
+    display: block;
+    margin: 0 0 20px auto;
+    padding: 10px 18px;
+    background: #263b63;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    background: #405b8c;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -174,7 +316,53 @@ footer {
     margin-top: 50px;
 }
 
+/* Active heading effect */
 .active-title {
     color: #ff9be7;
     text-shadow: 0 0 12px #ff9be7;
+}
+
+/* Print layout */
+@media print {
+    .print-btn,
+    .page-nav {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+        margin: 0;
+    }
+
+    .page {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 15px;
+        box-shadow: none;
+        border: none;
+        background: white;
+    }
+
+    .bio-header,
+    .bio-section {
+        background: white;
+        color: black;
+        border: 1px solid #aaa;
+        break-inside: avoid;
+    }
+
+    .bio-header h1,
+    .bio-header p,
+    .bio-section h2,
+    .bio-grid strong,
+    .bio-grid span,
+    .declaration p {
+        color: black;
+    }
+
+    section {
+        break-inside: avoid;
+    }
 }
