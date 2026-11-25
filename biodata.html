@@ -1,67 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Bio-data</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-
 <body>
 
-    <header>
-        <h1>MY BIO-DATA</h1>
-        <p>Personal Information</p>
-    </header>
+<div class="page">
 
-    <nav>
+    <nav class="page-nav">
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="biodata.html">Bio-data</a>
     </nav>
 
-    <div class="container reveal">
+    <button class="print-btn" onclick="window.print()">
+        Print / Save as PDF
+    </button>
 
-        <h2 class="section-title">About Me</h2>
-
-        <div class="profile-card">
-
-            <h3>Personal Details</h3>
-
-            <p><b>Name:</b> Deepthi H S</p>
-            <p><b>Date of Birth:</b> 02-05-2006</p>
-            <p><b>Gender:</b> Female</p>
-            <p><b>Nationality:</b> Indian</p>
-            <p><b>Languages:</b> Kannada, English</p>
-            <p><b>Address:</b> Hebbale,kodagu,karnaraka</p>
-            <p><b>Hobbies:</b> Reading, Music, Travelling,Dancing</p>
-
+    <header class="bio-header">
+        <div>
+            <p class="small-title">PERSONAL PROFILE</p>
+            <h1>My Bio-data</h1>
+            <p class="bio-subtitle">Personal and family information</p>
         </div>
 
-        <h2 class="section-title">My Interests</h2>
+        <img src="photo.jpg.jpeg" alt="Profile Photo" class="bio-photo">
+    </header>
 
-        <div class="skills">
-            <span>Technology</span>
-            <span>Programming</span>
-            <span>Learning</span>
-            <span>Creativity</span>
+    <section class="bio-section">
+        <h2>Personal Details</h2>
+
+        <div class="bio-grid">
+            <p><strong>Full Name</strong><span>Deepthi H S</span></p>
+            <p><strong>Date of Birth</strong><span>02-05-2006</span></p>
+            <p><strong>Gender</strong><span>Female</span></p>
+            <p><strong>Nationality</strong><span>Indian</span></p>
+            <p><strong>Marital Status</strong><span>Unmarried</span></p>
+            <p><strong>Languages Known</strong><span>English, Kannada, Hindi</span></p>
         </div>
+    </section>
 
-        <h2 class="section-title">Declaration</h2>
+    <section class="bio-section">
+        <h2>Contact Details</h2>
 
+        <div class="bio-grid">
+            <p><strong>Phone Number</strong><span>9880156968</span></p>
+            <p><strong>Email Address</strong><span>deepthihs@gmail.com</span></p>
+            <p class="full-width"><strong>Residential Address</strong><span>KUshalanagara,Kodagu, Karnataka</span></p>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <h2>Family Details</h2>
+
+        <div class="bio-grid">
+            <p><strong>Father's Name</strong><span>Suresh H T</span></p>
+            <p><strong>Father's Occupation</strong><span>Farmer</span></p>
+            <p><strong>Mother's Name</strong><span>Jyothi Y R</span></p>
+            <p><strong>Mother's Occupation</strong><span>Homemaker</span></p>
+            <p><strong>Number of Siblings</strong><span>2</span></p>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <h2>Educational Details</h2>
+
+        <div class="bio-grid">
+            <p><strong>Current Course</strong><span>Engineering</span></p>
+            <p><strong>College</strong><span>Rajeev Institute Of Technology, Hassan</span></p>
+            <p><strong>University</strong><span>Visvesvaraya Technological University</span></p>
+            <p><strong>Year of Passing</strong><span>2028</span></p>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <h2>Interests & Skills</h2>
+
+        <div class="bio-grid">
+            <p><strong>Hobbies</strong><span>Reading, music, learning new skills</span></p>
+            <p><strong>Skills</strong><span>Communication, teamwork, computer skills</span></p>
+        </div>
+    </section>
+
+    <section class="bio-section declaration">
+        <h2>Declaration</h2>
         <p>
-            I hereby declare that all the
-            information provided above is
-            true and correct to the best
-            of my knowledge.
+            I hereby declare that the information provided above is true
+            and correct to the best of my knowledge.
         </p>
 
-    </div>
+        <div class="declaration-details">
+            <p><strong>Place:</strong> Kushalanagara</p>
+            <p><strong>Date:</strong> 25-11-2026</p>
+            <p><strong>Signature:</strong> Deepthi</p>
+        </div>
+    </section>
 
-    <footer>
-        <p>My Personal Bio-data</p>
-    </footer>
-
-    <script src="script.js"></script>
+</div>
 
 </body>
 </html>
